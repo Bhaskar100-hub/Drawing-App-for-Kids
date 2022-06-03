@@ -84,6 +84,12 @@ class MainActivity : AppCompatActivity() {
         ibBrush.setOnClickListener {
             showBrushSizeChooserDialog()
         }
+
+        val ibUndo: ImageButton = findViewById(R.id.ib_undo)
+        ibUndo.setOnClickListener {
+            drawingView?.onClickUndo()
+        }
+
         val ibGallery: ImageButton = findViewById(R.id.ib_gallery)
         //TODO(Step 10 : Adding an click event to image button for selecting the image from gallery.)
 
